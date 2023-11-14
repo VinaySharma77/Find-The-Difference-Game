@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <title>Difference Game</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width:100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            height: 100vh;
+        }
+        #first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh{
+            height: 50px;
+            width: 50px;
+            border: 4px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+        #first{
+            left:168px;
+            top:30px;
+            display: none;
+        }
+        #second{
+            left: 635px;
+            top:30px;
+            display: none;
+        }
+        #third{
+            left:480px;
+            top:230px;
+            display: none;
+        }
+        #fourth{
+            left:10px;
+            top:290px;
+            display: none;
+        }
+        #fifth{
+            left:50px;
+            top:340px;
+            display: none;
+        }
+        #sixth{
+            left:390px;
+            top:440px;
+            display: none;
+        }
+        #seventh{
+            left:620px;
+            top:430px;
+            display: none;
+        }
+        #eighth{
+            left:90px;
+            top:610px;
+            display: none;
+        }
+        #ninth{
+            left:590px;
+            top:700px;
+            display: none;
+        }
+        #tenth{
+            left:650px;
+            top:700px;
+            display: none;
+        }
+        #eleventh{
+            left:50px;
+            top:560px;
+            display: none;
+        }
+    </style>
+    <body>
+        <div class="box">
+            <img src="Difference.jpg" usemap="#show">
+            <map name="show">
+                <area shape="circle" coords="189,57,26" onclick="document.getElementById('first').style.display='block'">
+                <area shape="circle" coords="656,60,27" onclick="document.getElementById('second').style.display='block'">
+                <area shape="circle" coords="509,292,38" onclick="document.getElementById('third').style.display='block'">
+                <area shape="circle" coords="33,300,39" onclick="document.getElementById('fourth').style.display='block'">
+                <area shape="circle" coords="72,380,28" onclick="document.getElementById('fifth').style.display='block'">
+                <area shape="circle" coords="416,480,24" onclick="document.getElementById('sixth').style.display='block'">
+                <area shape="circle" coords="640,500,26" onclick="document.getElementById('seventh').style.display='block'">
+                <area shape="circle" coords="116,660,42" onclick="document.getElementById('eighth').style.display='block'">
+                <area shape="circle" coords="615,740,27" onclick="document.getElementById('ninth').style.display='block'">
+                <area shape="circle" coords="668,740,48" onclick="document.getElementById('tenth').style.display='block'">
+                <area shape="circle" coords="74,600,32" onclick="document.getElementById('eleventh').style.display='block'">
+            </map>
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+            <div id="fourth"></div>
+            <div id="fifth"></div>
+            <div id="sixth"></div>
+            <div id="seventh"></div>
+            <div id="eighth"></div>
+            <div id="ninth"></div>
+            <div id="tenth"></div>
+            <div id="eleventh"></div>
+        </div>
+    </body>
+</html>
